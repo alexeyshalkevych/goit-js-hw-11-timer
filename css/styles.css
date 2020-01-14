@@ -74,7 +74,7 @@ body {
   }
 }
 
-@media (max-width: 680px) {
+@media (min-width: 400px) and (max-width: 680px) {
   .timer {
     width: 500px;
     padding: 14px;
