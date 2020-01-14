@@ -10,9 +10,10 @@ class CountdownTimer {
       timerSecs: this.timerRef.querySelector('span[data-value="secs"]')
     };
     this.timerId = 0;
-    this.startTime = 0;
-    this.deltaTime = 0;
+    this.startTime = Date.now();
+    this.deltaTime = this.targetDate.getTime() - this.startTime;
 
+    this.updateTimer(this.deltaTime);
     this.start();
   }
 
